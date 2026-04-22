@@ -55,8 +55,8 @@ resource "aws_instance" "server1" {
     Name = "ai-analizer"
     Project = "AI_Analizer"
   }
+}
 
-  output "public_ip" {
-    value = aws_instance.server1.public_ip
-  }
+output "public_ip" {
+  value = aws_instance.server1.public_ip
 }
